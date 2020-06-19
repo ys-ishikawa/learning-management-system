@@ -14,15 +14,15 @@ const App = () => {
       <form>
         <div className="form-group">
           <label htmlFor="studyType">学習種別</label>
-          <input className="form-control" id="studyType" value={studyType}/>
+          <input className="form-control" id="studyType" value={studyType} onChange={e => setStudyType(e.target.value)}/>
         </div>
         <div className="form-group">
           <label htmlFor="teachingMaterial">学習教材</label>
-          <input className="form-control" id="teachingMaterial" value={teachingMaterial} />
+          <input className="form-control" id="teachingMaterial" value={teachingMaterial} onChange={e => setTeachingMaterial(e.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="materialType">教材種別</label>
-          <input className="form-control" id="materialType" value={materialType} />
+          <input className="form-control" id="materialType" value={materialType} onChange={e => setMaterialType(e.target.value)} />
         </div>
       </form>
       <button className="btn btn-primary">学習イベントを作成する</button>
@@ -35,8 +35,6 @@ const App = () => {
         </thead>
         <tbody></tbody>
       </table>
-
-
     </div>
     </>
   )
