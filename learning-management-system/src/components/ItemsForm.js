@@ -34,7 +34,7 @@ const ItemsForm = () => {
             <h3>学習管理システム</h3>
             <form>
               <div className="form-group">
-                  <label htmlFor="studyType">種別（言語）</label>
+                  <label htmlFor="studyType">種別(言語)</label>
                   <input className="form-control" id="studyType" value={studyType} onChange={e => setStudyType(e.target.value)}/>
               </div>
               <div className="form-group">
