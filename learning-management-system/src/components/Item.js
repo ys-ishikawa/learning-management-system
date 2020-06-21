@@ -21,6 +21,7 @@ const Item = ({item}) => {
             <td>{item.studyType}</td>
             <td>{item.teachingMaterial}</td>
             <td>{item.materialType}</td>
+            <td>{item.createdAt}</td>
             <td><button className="btn btn-danger" onClick={deleteItem}>削除する</button></td>
         </tr>
     )

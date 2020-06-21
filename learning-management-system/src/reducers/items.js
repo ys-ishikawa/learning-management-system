@@ -11,6 +11,7 @@ const items = (state =[], action) => {
                 studyType: action.studyType,
                 teachingMaterial: action.teachingMaterial,
                 materialType: action.materialType,
+                createdAt: new Date().toISOString(),
             }
             const length = state.length
             const id = length === 0 ? 1 : state[length - 1].id + 1
