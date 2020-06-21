@@ -11,7 +11,7 @@ const ItemsList = () => {
             <h3>学習項目一覧</h3>
                 <table className="table table-hover">
                     <thead>
-                    <tr><th>ID</th><th>種別(言語)</th><th>学習教材名</th><th>教材種別</th><th>登録日時</th><th></th></tr>
+                    <tr><th>ID</th><th>学習内容</th><th>学習教材名</th><th>教材種別</th><th>登録日時</th><th></th></tr>
                     </thead>
                     <tbody>
                         { state.items.map((item, index) => (<Item key={index} item={item} />)) }

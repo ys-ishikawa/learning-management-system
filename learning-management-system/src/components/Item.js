@@ -9,10 +9,13 @@ const Item = ({item}) => {
 
     const deleteItem = e => {
         e.preventDefault()
-        dispatch({
-            type: DELETE_ITEM,
-            id
-        })
+        const deleteItemConfirm = window.confirm(`id=${id}の学習項目を本当に削除しますか？`)
+        if(deleteItemConfirm) {
+            dispatch({
+                type: DELETE_ITEM,
+                id
+            })
+        }
     }
 
     return(
