@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from 'react';
+import React, { useReducer } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import AppContext from '../contexts/AppContext';
 import reducer from '../reducers'

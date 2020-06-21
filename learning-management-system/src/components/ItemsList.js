@@ -9,7 +9,7 @@ const ItemsList = () => {
     return(
         <>
             <h3>学習項目一覧</h3>
-                <table class="table table-hover">
+                <table className="table table-hover">
                     <thead>
                     <tr><th>ID</th><th>学習種別</th><th>学習教材</th><th>教材種別</th><th></th></tr>
                     </thead>

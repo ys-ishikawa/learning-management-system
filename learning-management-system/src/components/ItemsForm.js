@@ -4,7 +4,7 @@ import AppContext from '../contexts/AppContext';
 
 const ItemsForm = () => {
 
-    const {state, dispatch} = useContext(AppContext)
+    const {dispatch} = useContext(AppContext)
     const [studyType, setStudyType] = useState('')
     const [teachingMaterial, setTeachingMaterial] = useState('')
     const [materialType, setMaterialType] = useState('')
@@ -43,6 +43,7 @@ const ItemsForm = () => {
             </div>
             <div className="form-group">
                 <label htmlFor="materialType">教材種別</label>
+                {/* TODO: ドロップダウン形式に修正 */}
                 <input className="form-control" id="materialType" value={materialType} onChange={e => setMaterialType(e.target.value)} />
             </div>
             </form>

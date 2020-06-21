@@ -1,6 +1,6 @@
 import {
     ADD_ITEM,
-    // DELETE_ITEM,
+    DELETE_ITEM,
     DELETE_ALL_ITEMS,
 } from '../actions'
 
@@ -17,6 +17,8 @@ const items = (state =[], action) => {
             return [...state, {id, ...items}]
         case DELETE_ALL_ITEMS:
             return []
+        case DELETE_ITEM:
+            return state.filter(event => event.id !== action.id)
         default:
             return state
     }
